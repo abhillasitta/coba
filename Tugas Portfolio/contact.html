@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Nama Anda</h1>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Kontak Saya: Form Request Project</h2>
+
+        <form action="/submit-form" method="post">
+
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="layanan">Jenis Layanan/Topik:</label>
+            <select id="layanan" name="layanan" required>
+                <option value="">-- Pilih Layanan --</option>
+                <option value="website">Jasa Edit Video</option>
+                <option value="mobile">Jasa Pembuatan Majalah</option>
+                <option value="desain">Jasa Desain Grafis</option>
+                <option value="lain">Lainnya</option>
+            </select>
+
+            <label for="pesan">Pesan / Deskripsi Proyek:</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+            <fieldset>
+                <legend>Preferensi Waktu Kontak:</legend>
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <label>
+                        <input type="radio" id="pagi" name="waktu_kontak" value="pagi" required>
+                         Pagi (08:00 - 12:00)
+                    </label>
+                    <label>
+                        <input type="radio" id="siang" name="waktu_kontak" value="siang">
+                        Siang (12:00 - 17:00)
+                    </label>
+                 </div>
+            </fieldset>
+
+            <button type="button" onclick="window.location.href='index.html'">
+            Kirim Permintaan Proyek</button>
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | <a href="http://itpln.ac.id" target="_blank">ITPLN</a></p>
+    </footer>
+
+</body>
+</html>
